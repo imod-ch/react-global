@@ -1,4 +1,8 @@
 {
   "name": "@imod-ch/react-global",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  }
 }

@@ -18,7 +18,12 @@
         "compiler": "babel",
         "assets": [
           {
-            "glob": "packages/react-global/README.md",
+            "glob": "README.md",
+            "input": ".",
+            "output": "."
+          },
+          {
+            "glob": "LICENSE",
             "input": ".",
             "output": "."
           }
