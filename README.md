@@ -19,7 +19,8 @@ import { FC } from 'react';
 import { useGlobal } from '@imod-ch/react-global';
 
 const SampleComponent: FC = () => {
-  const globalVariable = useGlobal<string>('globalVariable');
+  const [globalVariable, setGlobalVariable] =
+    useGlobal<string>('globalVariable');
 
   return <p>{globalVariable}</p>;
 };
