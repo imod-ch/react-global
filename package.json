@@ -9,14 +9,14 @@
   },
   "private": true,
   "devDependencies": {
-    "@nrwl/cli": "15.0.0",
-    "@nrwl/eslint-plugin-nx": "15.0.0",
-    "@nrwl/jest": "15.0.0",
-    "@nrwl/js": "15.0.0",
-    "@nrwl/linter": "15.0.0",
-    "@nrwl/react": "15.0.0",
-    "@nrwl/web": "15.0.0",
-    "@nrwl/workspace": "15.0.0",
+    "@nrwl/cli": "15.0.1",
+    "@nrwl/eslint-plugin-nx": "15.0.1",
+    "@nrwl/jest": "15.0.1",
+    "@nrwl/js": "15.0.1",
+    "@nrwl/linter": "15.0.1",
+    "@nrwl/react": "15.0.1",
+    "@nrwl/web": "15.0.1",
+    "@nrwl/workspace": "15.0.1",
     "@testing-library/react": "13.4.0",
     "@types/jest": "28.1.1",
     "@types/node": "16.11.7",
@@ -33,7 +33,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
-    "nx": "15.0.0",
+    "nx": "15.0.1",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
     "ts-jest": "28.0.5",
@@ -48,3 +48,4 @@
     "tslib": "^2.3.0"
   }
 }
+
