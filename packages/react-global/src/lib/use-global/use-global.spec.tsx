@@ -6,8 +6,8 @@ import useGlobal from './use-global';
 
 describe('useGlobal', () => {
   beforeEach(() => {
-    (global as any)['fruits'] = ['Apple'];
-    (global as any)['name'] = 'useGlobalTest';
+    (globalThis as any)['fruits'] = ['Apple'];
+    (globalThis as any)['name'] = 'useGlobalTest';
   });
 
   it('should return global variable fruits', () => {
@@ -25,12 +25,12 @@ describe('useGlobal', () => {
   it('should set global variable', () => {
     const { result } = renderHook(() => useGlobal<string>('setterTest'));
 
-    expect((global as any)['setterTest']).toBe(undefined);
+    expect((globalThis as any)['setterTest']).toBe(undefined);
 
     act(() => {
       result.current[1]('This is a test for setter');
     });
 
-    expect((global as any)['setterTest']).toBe('This is a test for setter');
+    expect((globalThis as any)['setterTest']).toBe('This is a test for setter');
   });
 });

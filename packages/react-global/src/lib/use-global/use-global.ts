@@ -6,13 +6,13 @@ export const useGlobal = <T = string>(
   const setValue = useCallback(
     (value: T) => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (global as any)[variable] = value;
+      (globalThis as any)[variable] = value;
     },
     [variable]
   );
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return [(global as any)[variable], setValue];
+  return [(globalThis as any)[variable], setValue];
 };
 
 export default useGlobal;
